@@ -1,5 +1,5 @@
-from queue.application_handler import Application
-from dequeue.palindrom import Palindrom
+from application_queue.application_handler import Application
+from palindrom_dequeue.palindrom import Palindrom
 
 def parse_input(user_input):
     if not user_input:
