@@ -24,11 +24,17 @@ def main():
         elif command == "hello":
             print("How can I help you?")
         elif command in ["application", "1"]:
+            if len(args) != 0:
+                print("Please enter no arguments.")
+                continue
             application = Application()
             application.run()
         elif command in ["palindrom", "2"]:
+            if len(args) != 1:
+                print("Please ent2er a word to check as a palindrome.")
+                continue
             palindrom = Palindrom()
-            print(palindrom.palindrom(args[0]))
+            print(palindrom.run(args[0]))
         elif command in ["check", "3"]:
             pc = Palindrom()
             print(pc.check(args[0]))
