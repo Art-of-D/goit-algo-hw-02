@@ -12,7 +12,7 @@ class Palindrom:
   def run(self, word):
     if word is None:
       raise ValueError("Word to check as palindrome cannot be null.")
-    if not isinstance(word, str):
+    if type(word) != str:
       raise ValueError("Word to check as palindrome must be a string.")
     
     word = word.strip().casefold()
