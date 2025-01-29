@@ -16,8 +16,8 @@ class Palindrom:
       raise ValueError("Word to check as palindrome must be a string.")
     
     word = word.strip().casefold()
-    if len(word) <= 1 or  not word.isalpha():
-      raise ValueError("Word to check as palindrome cannot be empty, one character or does not contain any letter.")
+    if len(word) <= 1:
+      raise ValueError("Word to check as palindrome cannot be empty")
     
     print("Checking if the word is a palindrome...")
 
